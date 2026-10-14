@@ -1,12 +1,12 @@
 # Banana Game - Advanced CS Educational Application 🍌
 
-An advanced, production-grade Python desktop application designed to demonstrate four core Computer Science themes for a 10-minute educational video presentation.
+An advanced, production-grade Python desktop application designed to demonstrate four core Computer Science themes.
 
 ---
 
 ## 📌 Executive Summary & Core CS Themes
 
-This project serves as the practical implementation for a 10-minute video presentation covering:
+This project covers:
 
 1. **Version Control & Evolutionary Design**: Transition from legacy monolithic Java Swing code (`LoginGUI.java` / `GameGUI.java`) into a clean, modular, object-oriented Python architecture following the Model-View-Controller (MVC) pattern.
 2. **Event-Driven Programming (GUI Architecture)**: CustomTkinter event-loop architecture with asynchronous worker threads (`threading.Thread`) ensuring non-blocking network calls and real-time control event bindings.
@@ -22,7 +22,7 @@ banana_game/
 │
 ├── main.py                     # Main application entry point & view router
 ├── requirements.txt            # Project dependencies (customtkinter, Pillow, requests)
-├── README.md                   # System documentation & presentation script
+├── README.md                   # System documentation
 │
 ├── auth/                       # Virtual Identity & Security Package
 │   ├── __init__.py
@@ -78,29 +78,3 @@ Run the entry point script from the project root directory:
 ```bash
 python main.py
 ```
-
----
-
-## 🎬 10-Minute Video Presentation Talking Points & Script
-
-Use this structured breakdown when recording your 10-minute presentation video:
-
-### ⏱️ Minute 0:00 - 02:00: Project Introduction & Theme 1 (Evolutionary Design)
-- **Concept:** Explain how the legacy Java Swing app (`LoginGUI.java` / `GameGUI.java`) was refactored into a modular Python application.
-- **Key Point:** Highlight separation of concerns into distinct packages (`auth`, `engine`, `models`, `gui`, `utils`).
-- **Code Reference:** Point to `models/user.py` and `main.py` demonstrating OOP encapsulation.
-
-### ⏱️ Minute 02:00 - 04:00: Theme 2 (Event-Driven GUI Architecture)
-- **Concept:** Explain CustomTkinter event loops, callback bindings, and asynchronous multithreading.
-- **Key Point:** Demonstrate how keypad buttons (0-9) and physical keyboard inputs bind to event handlers in `gui/game_view.py`. Show that fetching new puzzle images uses background threads (`engine/game_engine.py`) so the UI never freezes.
-
-### ⏱️ Minute 04:00 - 07:00: Theme 3 (Interoperability & REST API)
-- **Concept:** Discuss HTTP protocol integration with Marc Conrad's Banana API (`https://marcconrad.com/uob/banana/api.php`).
-- **Key Point:** Open `engine/banana_api.py`. Show how JSON/CSV responses containing Base64 binary strings are decoded with PIL and rendered seamlessly. Demonstrate the offline fallback equation generator.
-
-### ⏱️ Minute 07:00 - 09:00: Theme 4 (Virtual Identity & RBAC Admin Dashboard)
-- **Concept:** Explain Virtual Identity verification and Role-Based Access Control.
-- **Key Point:** Log in as `Ada` (PLAYER) to show game functionality, then log in as `admin` (ADMIN) to reveal the Admin Dashboard (`gui/admin_view.py`). Show score resets, registration of new accounts, real-time audit logs (`models/session_log.py`), and API health ping diagnostics.
-
-### ⏱️ Minute 09:00 - 10:00: Live Demo & Conclusion
-- **Concept:** Solve a live equation puzzle, score points, check high score update, and summarize learning outcomes.
