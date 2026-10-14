@@ -1,0 +1,26 @@
+{
+  "Ada": {
+    "username": "Ada",
+    "password_hash": "33ad84c0c70691f2f4ec8dec70763d5049311cb7e954425dc739602a39834ce5",
+    "role": "PLAYER",
+    "high_score": 142,
+    "total_games": 39,
+    "total_wins": 13
+  },
+  "admin": {
+    "username": "admin",
+    "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "role": "ADMIN",
+    "high_score": 24,
+    "total_games": 9,
+    "total_wins": 2
+  },
+  "bad": {
+    "username": "bad",
+    "password_hash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+    "role": "PLAYER",
+    "high_score": 80,
+    "total_games": 7,
+    "total_wins": 5
+  }
+}
